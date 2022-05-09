@@ -2,26 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PlantStates
-{
-    Seed,
-    Seedling,
-    Budding,
-    BloomingOpen,
-    BloomingClosed
-};
-
-public enum PlantStatus
-{
-    
-    None,
-    Wilted,
-    Weedy,
-    Dry,
-    Dead,
-    Wet,
-    Buggy
-};
 
 public enum GrowthRate
 {
@@ -44,8 +24,6 @@ public class Plants : ScriptableObject
     public string Name;
     public string Description;
     public PlantType plantType;
-    public PlantStates currentState;
-    public PlantStatus currentStatus;
     public GrowthRate growthRate;
     public bool bloomsAtNight;
     public bool bloomsDuringDay;
